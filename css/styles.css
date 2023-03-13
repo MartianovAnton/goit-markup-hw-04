@@ -213,10 +213,7 @@ body {
 .secondary-section-list {
   width: 264px;
 }
-.secondary-list-link {
-}
-.secondary-list-icon {
-}
+
 .secondary-list-item {
   width: 264px;
   height: 112px;
@@ -240,7 +237,6 @@ body {
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: 72px;
-
   text-align: center;
 }
 .works-container-list {
@@ -317,6 +313,36 @@ body {
 
 /* <!-- //social-list// --> */
 /* ==============/Team/============ */
+/* ==============Customers========= */
+.customers-container {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  background: #ffffff;
+  border: 1px solid #8e8f99;
+  fill: currentColor;
+  color: #8e8f99;
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
+
+/* ============//Customers//========= */
 /* ============footer============= */
 .footer-logo-studio {
   font-family: "Raleway";
@@ -365,6 +391,9 @@ body {
   gap: 24px;
   margin-top: 24px;
 }
+.footer-container {
+  width: 264px;
+}
 .footer-social-list-icon {
   fill: #f4f4fd;
 }
@@ -376,8 +405,14 @@ body {
 }
 .social-media-container {
   margin-left: 120px;
+  width: 208px;
 }
-
+.footer-social-container {
+  display: flex;
+}
+.container-media {
+  display: flex;
+}
 /* ============/footer/============= */
 
 /* ========== PORTFOLIO===+++====== */
