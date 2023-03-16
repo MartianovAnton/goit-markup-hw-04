@@ -84,6 +84,8 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* ===============/LOGO/============== */
 .menu {
@@ -142,6 +144,11 @@ body {
     ),
     url("../images/hero.jpg");
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
 }
 .text-hero {
   font-weight: 700;
@@ -322,19 +329,23 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 8px;
+}
+.customers-list-item {
+  width: calc((100% - 24px) / 6);
+  height: 88px;
 }
 
 .customers-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
   border: 1px solid #8e8f99;
   fill: currentColor;
   color: #8e8f99;
+  border-radius: 4px;
 }
 .customers-list-link:hover,
 .customers-list-link:focus {
@@ -389,7 +400,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 .footer-container {
   width: 264px;
@@ -401,11 +412,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-footer-color);
-  width: 264px;
+  font-weight: normal;
 }
 .social-media-container {
   margin-left: 120px;
-  width: 208px;
 }
 .footer-social-container {
   display: flex;
@@ -419,7 +429,6 @@ body {
 /* ===========portfolio-buttons===== */
 .portfolio-section {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 .portfolio-buttons {
   color: var(--blue-text-color);
@@ -433,7 +442,6 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  margin-bottom: 72px;
 }
 
 .portfolio-buttons:hover,
@@ -464,6 +472,29 @@ body {
   border-top: none;
   padding: 32px 16px;
 }
+.project-card-list-shadow {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.project-card-list-shadow :hover,
+.project-card-list-shadow :focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.card-border-text {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+.card-secondary-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
 /* ============/Project Card/============ */
 /* ==========//PORTFOLIO//============ */
 .test {
